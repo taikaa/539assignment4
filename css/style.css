@@ -1,0 +1,350 @@
+
+body {
+	font-family: Roboto, Helvetica, Verdana;
+	padding: 1%;
+}
+
+header {
+	margin-bottom: 1%;
+}
+
+img {
+	max-width: 100%; /* added so won't be more than full screen */ 
+}
+/* all paragraphs with some padding */
+p {
+	padding-top:15px;
+	line-height: 1.6;
+}
+
+div li {
+	line-height: 1.6;
+}
+
+h1 {
+	font-family: Roboto, Helvetica, Verdana;
+	font-size: 2em;
+	padding-top: 5%;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p.subtitle {
+	font-style: italic;
+}
+
+/* skip content */
+/* gathered this from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
+/* got a link to resource from Katie for this part */ 
+a.skip-main {
+	padding: 10px;
+	position: relative;
+	top: -1000px;
+	left: -1000px;
+	overflow: hidden;
+	text-align: left;
+}
+
+a.skip-main:focus {
+	top: auto;
+	left: auto;
+	width: 20%;
+	height: auto;
+	background: white;
+	overflow: visible;
+}
+
+header{
+	background: #f1f1f1;
+	display: flex;
+    justify-content: space-between;
+}
+/* -----styling header ------- */
+/* navigation bar edits */
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 5px 5px;
+	background-color: #f1f1f1;
+	text-align: right;
+	align-items: center;
+}
+
+/* hiding header icon(s) when on mobile */ 
+.social_header{
+	display: none;
+}
+
+nav li {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	min-height: 6vh;
+	background-color: white;
+}
+nav li a {
+	display: inline-block; /* added */ 
+	color: #000000;
+	padding: 7px;
+	/*padding-bottom: 20px;*/
+	/*height: 100%;*/ /* how to make the color go all the way? */
+	/*line-height: 100%;*/
+	text-decoration: none;
+	text-align: center;
+	font-family: Roboto, Helvetica, Verdana; 
+}
+
+/* animation when someone hovers over navigation */ 
+/*nav li:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+*/
+nav li a:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/* font awesome social media links */
+div i.fab {
+	position: relative;
+	align-self: left;
+}
+
+/* ----end of nav ---- */
+
+
+
+
+/* style color of icons */
+i.social {
+	color: black;
+}
+
+
+/* ------projects page ------- */
+/* flex box project page */
+div.projects{
+	display:flex;
+	margin-left:15%;
+/*	margin-top: 2%;*/
+	justify-content: flex-start;
+	flex-direction: column;
+	min-height: 80vh;
+}
+
+div.projects h2 {
+	margin-left: 1rem;
+	padding-bottom: 1.2rem;
+}
+
+div.projects img {
+	border: solid black 1px;
+	margin: 1rem 1rem;
+}
+
+
+.current {
+	text-decoration: underline;
+}
+
+
+main li {
+	display: list-item;
+	list-style: disc outside none;
+	margin-left: 1em;
+} 
+
+ul {
+	list-style-type: square;
+	font-family: Roboto, Helvetica, Verdana;
+}
+
+/* .projects_container {
+	display: flex;
+	flex-directon: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom: 3rem;
+}
+
+.projects_container img {
+	padding-bottom: .3rem;
+}
+
+.projects_container h2 {
+	padding-bottom: .3rem;
+}
+*/
+/* ------about me page -------*/
+/* responsive about me */
+
+div.about_me {
+	margin-left: 5%;
+	margin-bottom: 5%;
+	display: inline-block;
+	width: 90%;
+
+}
+
+	img.me {
+		height: 40vh;
+		padding-top: 2%;
+		margin: auto;
+		}
+
+div.pyramid {
+	display: inline-block;
+	width: 90%;
+	height: 30vh;
+	margin-bottom: 5%;
+}
+
+div.pyramid img {
+	/*margin: auto;*/
+	margin-left: 15%;
+	height: 40vh;
+	margin-bottom: 40%;
+}
+
+	img.pyramid {
+		margin:auto;
+	}
+	
+/* ----end about me page ----*/
+
+/* -------ux page--------- */
+
+
+div.ux {
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-bottom: 4%;
+	/*padding-top: 2%;*/
+}
+
+img.ux {
+	display: block;
+	margin: auto;
+	border: 1px solid black;
+}
+
+img.companalysis {
+	display: block;
+	margin: auto;
+}
+
+.ux_grid {
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.ux_grid img {
+	border: 1px solid black;
+}
+
+/* ----end ux page ----*/
+
+/* -----violence research page ------ */
+div.violence {
+	display: inline-block;
+	width: 80%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-top: 2%;
+}
+
+div.violence img {
+	height: 40vh;
+}
+
+div.violence.infographic {
+	display: inline-block;
+	width: 90%;
+	margin: auto;
+
+}
+
+div.violence.infographic img{
+	height: 80vh;
+	margin: auto;
+	display: block;
+}
+
+/* ----upcoming projects page -----*/
+div.upcoming {
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: 2%;
+}
+
+img.upcoming{
+	display: block;
+	height: 40vh;
+}
+
+/* responsive design for large screens */
+@media screen and (min-width:780px){
+nav li {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	min-height: 6vh;
+	background-color: white;
+}
+nav ul{
+	justify-content: flex-end;
+}
+
+.social_header{
+	display: block;
+}
+
+div.about_me, div.pyramid{
+	width:40%;
+}
+
+/* about me background image on large screens only */
+.background {
+	background-image: url("../images/yachats.jpg");
+	background-color: #cccccc;
+	height: 400px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-right: 1%;
+}
+
+.ux_grid {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* violence research */
+div.violence.infographic img {
+	display: inline-block;
+	width: 40%;
+}
+
+/* projects page */
+div.projects{
+	display:flex;
+	margin-left:15%;
+	margin-top: 2%;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+}

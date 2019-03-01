@@ -1,0 +1,24 @@
+.full-text{
+	display: block;
+	padding: 20px;
+}
+.me{
+	display:block;
+	margin:auto;
+	padding:20px;
+}
+.flex-row{
+	display:flex;
+}
+
+.flex-text{
+	display:inline-block;
+	width:60%;
+	padding:20px;
+	text-align: left;
+}
+.flex-img{
+	display:inline-block;
+	width:37%;
+	margin: auto;
+}
