@@ -8,6 +8,10 @@ header {
 	margin-bottom: 1%;
 }
 
+footer {
+	margin-bottom: 1%;
+}
+
 img {
 	max-width: 100%; /* added so won't be more than full screen */ 
 }
@@ -91,7 +95,7 @@ nav li {
 	background-color: white;
 }
 nav li a {
-	display: inline-block; /* added */ 
+	display: inline-block;
 	color: #000000;
 	padding: 7px;
 	/*padding-bottom: 20px;*/
@@ -132,6 +136,11 @@ i.social {
 
 /* ------projects page ------- */
 /* flex box project page */
+
+h1.projects {
+	text-align: center;
+}
+
 div.projects{
 	display:flex;
 	margin-left:15%;
@@ -144,13 +153,28 @@ div.projects{
 div.projects h2 {
 	margin-left: 1rem;
 	padding-bottom: 1.2rem;
+	/*text-align: center;*/
+	font-size: 1.2em;
+}
+
+div.projects h2.projects{
+	text-decoration: none;
 }
 
 div.projects img {
 	border: solid black 1px;
 	margin: 1rem 1rem;
+	opacity: 0.5;
 }
 
+div.projects img:hover {
+	opacity: 1;
+}
+
+a.projects {
+	text-decoration: none;
+	color: black;
+}
 
 .current {
 	text-decoration: underline;
@@ -346,5 +370,16 @@ div.projects{
 	margin-top: 2%;
 	justify-content: flex-start;
 	flex-direction: row;
+}
+}
+
+/* responsive design for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  nav li a:hover {
+	color: none;
+	background-color: none;
+}
+  div.projects img {
+	opacity: 1;
 }
 }
